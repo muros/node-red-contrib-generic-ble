@@ -365,6 +365,7 @@ export default function(RED) {
         //   :
         // }
         write: (dataObj) => {
+          console.log('Data: ', dataObj);
           if (!dataObj) {
             return Promise.resolve();
           }
